@@ -1,0 +1,19 @@
+PODS:
+  - Alamofire (3.3.1)
+  - NorthLayout (2.0.0)
+  - SwiftyDropbox (3.0.0):
+    - Alamofire (~> 3.1)
+  - "※ikemen (0.1.2)"
+
+DEPENDENCIES:
+  - NorthLayout
+  - SwiftyDropbox
+  - "※ikemen"
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  NorthLayout: 52739ecae3c9c5877770869d4277c308512f9fd5
+  SwiftyDropbox: e0d4aa3166082ec07ed942e94edb8c732b3376e4
+  "※ikemen": 383f5d91494ed348a0f3943346610e1efa090fee
+
+COCOAPODS: 0.39.0
