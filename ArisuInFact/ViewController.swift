@@ -17,10 +17,16 @@ class ViewController: UIViewController {
         v.contentMode = .ScaleAspectFit
     }
     private lazy var yesButton: UIButton = UIButton(type: .System) ※ { b in
+        b.layer.cornerRadius = 4
+        b.layer.borderWidth = 1
+        b.layer.borderColor = UIColor.blueColor().CGColor
         b.setTitle("ありす", forState: .Normal)
         b.addTarget(self, action: #selector(yes), forControlEvents: .TouchUpInside)
     }
     private lazy var noButton: UIButton = UIButton(type: .System) ※ { b in
+        b.layer.cornerRadius = 4
+        b.layer.borderWidth = 1
+        b.layer.borderColor = UIColor.blueColor().CGColor
         b.setTitle("ちがう", forState: .Normal)
         b.addTarget(self, action: #selector(no), forControlEvents: .TouchUpInside)
     }
@@ -55,8 +61,8 @@ class ViewController: UIViewController {
         autolayout("H:|[image]|")
         autolayout("H:|-p-[no]-p-[yes(==no)]-p-|")
         autolayout("V:|-p-[spacerT][image]")
-        autolayout("V:[image][yes][spacerB]")
-        autolayout("V:[image][no][spacerB]")
+        autolayout("V:[image][yes(==44)][spacerB]")
+        autolayout("V:[image][no(==yes)][spacerB]")
         autolayout("V:[spacerB(==spacerT)]-p-|")
     }
     
